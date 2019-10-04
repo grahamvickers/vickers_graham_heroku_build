@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <title>My Super Awesome Template</title>
+    <link rel="stylesheet" href="../sass/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+    <title>Toronto Maple Leafs</title>
 </head>
 <body>
-    <header>
-        <img href="/index.hbs" src="images/logo.svg" alt="Toronto Maple Leafs Logo">
+    <header id="mainHeader">
+        <img href="../index.html" src="../images/logo.svg" alt="Toronto Maple Leafs Logo">
         <h1>Toronto Maple Leafs</h1>
-        <ul class="mainNav">
-            <li><a href="/home.hbs">HOME</a></li>
-            <li><a href="/">SHOP</a></li>
-            <li><a href="/">SCHEDULE</a></li>
-            <li><a href="/">LOGIN</a></li>
-        </ul>
+        <nav id="mainNav">
+            <h2 class="hidden"></h2>
+            <div id="burgerCon">
+                <button id="button"></button>
+                <ul id="burgerMenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">SCHEDULE</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <div id="promo">
-        <h4>SIGN UP & SAVE 15%</h4>
+        <h5>SIGN UP & SAVE 15%</h5>
     </div>
 
     <div id="pageIntro">
         <picture>
-            <source srcset="/images/austin_mathews_lrg.jpg" media="(min-width: 600px)" alt="Austin Mathews">
-            <img src="/images/austin_mathews_sml.jpg" alt="Austin Mathews">
+            <source srcset="../images/austin_mathews_lrg.jpg" media="(min-width: 1200px)" alt="Austin Mathews">
+            <img src="../images/austin_mathews_sml.jpg" alt="Austin Mathews">
         </picture> 
         <h2 class="pageInto">Welcome to Leafs Nations</h2>
     </div>
@@ -36,13 +43,13 @@
         <div id="contentCon">
             <div>
                 <h3>TEAM SHOP</h3>
-                <img src="/images/leafs_hat.jpg" alt="Leafs Hat">
+                <img src="../images/leafs_hat.jpg" alt="Leafs Hat" id="contentImg">
                 <button>SHOP NOW</button>
             </div>
 
             <div>
                 <h3>TEAM SCHEDULE</h3>
-                <img src="/images/schedule.jpg" alt="Leafs Schedule">
+                <img src="../images/schedule.jpg" alt="Leafs Schedule" id="contentImg">
                 <button>BUY TICKETS</button>
             </div>
         </div>
@@ -52,18 +59,20 @@
             <p>Sign up and make an account to shop, earn rewards, recieve newsletters and be entered in contests!</p>
             
         </div>
+
+        <footer>
+            <ul class="mainNav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">SCHEDULE</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+            <p>DESIGNED & BUILT BY GRAHAM VICKERS, 2019®</p>
+        </footer>
     </main> 
 
-    <footer>
-        <ul class="mainNav">
-            <li><a href="/home.hbs">HOME</a></li>
-            <li><a href="/">SHOP</a></li>
-            <li><a href="/">SCHEDULE</a></li>
-            <li><a href="/">LOGIN</a></li>
-        </ul>
-        <p>DESIGNED & BUILT BY GRAHAM VICKERS, 2019®</p>
-    </footer>
+   
 
-    <script src="js/main.js"></script>
+    <script src="../app.js"></script>
 </body>
 </html>
