@@ -1,7 +1,30 @@
 main {
-    width: 90%;
+    width: 80%;
     text-align: center;
     margin: 0 auto;
+}
+
+.hidden{
+    display: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #00377A;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #3f3f3f;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 26px;
+    font-weight: bold;
 }
 
 // This is the header and nav area
@@ -11,7 +34,7 @@ main {
 		flex-direction: row;
 		justify-content: space-between;
 		margin-bottom: 20px;
-		padding-top: 20px;
+		padding: 20px;
 		background-color: #F2F2F2;
 	}
 
@@ -39,7 +62,7 @@ main {
 	}
 
 	#mainNav a:after {
-		color: #fa8c32;
+		color: #00377A;
 		content: "";
 		display: block;
 		width: 0;
@@ -67,7 +90,53 @@ main {
 		display: block;
 		margin: 10px 20px 10px 20px;
 		text-align: right;
-		color: #329efa;
+		color: #00377A;
 		justify-content: center;
-	}
+    }
+    
+    #promo{
+        background: #00377A;
+        text-align: center;
+        color: white;
+    }
 
+    h5{
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+// THIS IS THE TABLET AREA!!
+@media only screen and (min-width: 600px) {
+    #contentCon{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+
+        // #contentImg{
+        //     size: 10%;
+        // }
+    }
+}
+
+@media only screen and (min-width: 960px) {
+#button{
+    display: none;
+}
+
+#burgerMenu{
+    display: flex;
+    flex-direction: row;
+}
+
+#burgerCon{
+    display: flex;
+}
+
+
+
+
+}
